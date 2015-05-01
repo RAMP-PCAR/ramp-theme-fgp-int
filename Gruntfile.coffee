@@ -1426,7 +1426,7 @@ module.exports = (grunt) ->
                     user: 'ramp-pcar-bot'
                     password: process.env.GH_TOKEN
                 release:
-                    draft: false
+                    draft: true
                     prerelease: true
                     tag_name: process.env.TRAVIS_TAG
             files:
