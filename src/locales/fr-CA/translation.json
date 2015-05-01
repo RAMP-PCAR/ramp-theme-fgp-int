@@ -1,6 +1,28 @@
 {
     "page": {
         "title": "Plateforme de cartographie accessible et réutilisable (PCAR) - Thème d'intranet",
-        "siteTitle": "Plateforme de cartographie accessible et réutilisable - Thème d'intranet"
+        "siteTitle": "Federal Geospatial Platform",
+        "siteSubTitle": "Data Catalogue",
+        "menu": {
+            "homeText": "Accueil",
+            "homeTitle": "Page d’accueil du Catalogue de données d'Environnement Canada",
+            "searchText": "Rechercher",
+            "searchTitle": "Recherche des enregistrements dans le catalogue",
+            "basicSearchText": "Recherche de base",
+            "basicSearchTitle": "La page de la recherche de base du catalogue de données d'EC. A partir d’ici, vous pouvez faire la recherche du catalogue en utilisant les mots clés",
+            "advancedSearchText": "Recherche avancée",
+            "advancedSearchTitle": "La page de recherche avancée du catalogue de données d'EC. Utilisez le formulaire pour créer des requêtes avancées dans le catalogue",
+            "browseText": "Explorer",
+            "browseTitle": "Liste des enregistrements qui peut être raffinée dans la page de résultats de recherche",
+            "registerText": "S'inscrire",
+            "registerTitle": "Compléter le formulaire sur cette page pour vous inscrire à un compte avec le catalogue de données d'Environnement Canada",
+            "signInText": "Ouvrir une session",
+            "signInTitle": "Saisissez vos renseignements de compte pour vous connecter au catalogue de données d'EC",
+            "helpText": "Aide",
+            "helpTitle": "Accéder aux guides et ressources de l’utilisateur",
+            "rampText": "PCAR",
+            "rampStarted": "Pour commencer",
+            "rampDocs": "Documentation de la PCAR"
+        }
     }
 }
