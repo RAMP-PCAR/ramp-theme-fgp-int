@@ -1,4 +1,6 @@
-<a href="{{altLangPrefix}}-{{language}}.html">
+<a href="/geonetwork/home/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}">
 	<span>{{t "page.siteTitle"}}</span>
+	<br>
+	<span class="cn-site-title-italic">{{t "page.siteSubTitle"}}</span>
 </a>
 <object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./{{assets}}/assets/wmms-intra.svg" aria-label="{{{i18n "tmpl-gc-wmms"}}}"></object>

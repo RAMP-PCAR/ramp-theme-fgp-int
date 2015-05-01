@@ -1,0 +1,29 @@
+<div class="pnl-strt container visible-md visible-lg nvbar">
+    <h2>{{{i18n "tmpl-topics-menu"}}}</h2>
+    <div class="row">
+        <ul class="list-inline menu" role="menubar">
+            
+            <li><a  target="_blank" href="#part1" class="item">{{t "page.menu.rampText"}}</a>
+                <ul class="sm list-unstyled" id="part1" role="menu">
+                    <li><a target="_blank" href="http://ramp-pcar.github.io/index-en.html">{{t "page.menu.rampText"}}</a></li>
+                    <li><a target="_blank" href="http://ramp-pcar.github.io/docs/started-en.html">{{t "page.menu.rampStarted"}}</a></li>
+                    <li><a target="_blank" href="http://ramp-pcar.github.io/docs/index-en.html">{{t "page.menu.rampDocs"}}</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="/geonetwork/home/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.homeTitle"}}" tabindex="0" aria-posinset="1" aria-setsize="6" role="menuitem">{{t "page.menu.homeText"}}</a></li>
+            <li><a href="#" title="{{t "page.menu.searchTitle"}}" class="item" tabindex="-1" aria-posinset="2" aria-setsize="6" role="menuitem" aria-haspopup="true">{{t "page.menu.searchText"}}</a>
+                <ul class="sm list-unstyled" id="contribute" role="menu" aria-expanded="false" aria-hidden="true">
+                    <li><a href="/geonetwork/search/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.basicSearchTitle"}}" tabindex="-1" aria-posinset="1" aria-setsize="2" role="menuitem">{{t "page.menu.basicSearchText"}}</a></li>
+                    <li><a href="/geonetwork/advanced/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.advancedSearchTitle"}}" tabindex="-1" aria-posinset="2" aria-setsize="2" role="menuitem">{{t "page.menu.advancedSearchText"}}</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="/geonetwork/browse/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.browseTitle"}}" tabindex="-1" aria-posinset="3" aria-setsize="6" role="menuitem">{{t "page.menu.browseText"}}</a></li>
+            <li><a href="/geonetwork/accountrequest/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.registerTitle"}}" tabindex="-1" aria-posinset="4" aria-setsize="6" role="menuitem">{{t "page.menu.registerText"}}</a></li>
+            <li><a href="/geonetwork/login/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.signInTitle"}}" tabindex="-1" aria-posinset="5" aria-setsize="6" role="menuitem">{{t "page.menu.signInText"}}</a></li>
+            <li><a target="_blank" title="{{t "page.menu.helpTitle"}}" href="http://ecollab.ncr.int.ec.gc.ca/theme/ipgi-impi/cfgddmtc/data%20management%20training%20centre.aspx?pflg={{#isnt language "fr"}}1033{{else}}1036{{/isnt}}&amp;" tabindex="-1" aria-posinset="6" aria-setsize="6" role="menuitem">{{t "page.menu.helpText"}}</a></li>
+			
+        </ul>
+    </div>
+</div>
