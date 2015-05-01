@@ -3,14 +3,16 @@
     <div class="row">
         <ul class="list-inline menu">
 {{#unless page.altMenu}}
-			<li><a target="_blank" href="http://ramp-pcar.github.io/index-en.html">{{t "page.menu.rampText"}}</a></li>
 				
 			<li><a href="/geonetwork/home/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.homeTitle"}}" tabindex="0" aria-posinset="1" aria-setsize="6" role="menuitem">{{t "page.menu.homeText"}}</a></li>
             <li><a href="/geonetwork/search/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.searchTitle"}}" class="item" tabindex="-1" aria-posinset="2" aria-setsize="6" role="menuitem" aria-haspopup="true">{{t "page.menu.searchText"}}</a></li>
             <li><a href="/geonetwork/browse/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.browseTitle"}}" tabindex="-1" aria-posinset="3" aria-setsize="6" role="menuitem">{{t "page.menu.browseText"}}</a></li>
             <li><a href="/geonetwork/accountrequest/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.registerTitle"}}" tabindex="-1" aria-posinset="4" aria-setsize="6" role="menuitem">{{t "page.menu.registerText"}}</a></li>
             <li><a href="/geonetwork/login/{{#isnt language "fr"}}eng{{else}}fre{{/isnt}}" title="{{t "page.menu.signInTitle"}}" tabindex="-1" aria-posinset="5" aria-setsize="6" role="menuitem">{{t "page.menu.signInText"}}</a></li>
-            <li><a target="_blank" title="{{t "page.menu.helpTitle"}}" href="http://ecollab.ncr.int.ec.gc.ca/theme/ipgi-impi/cfgddmtc/data%20management%20training%20centre.aspx?pflg={{#isnt language "fr"}}1033{{else}}1036{{/isnt}}&amp;" tabindex="-1" aria-posinset="6" aria-setsize="6" role="menuitem">{{t "page.menu.helpText"}}</a></li>			
+            <li><a target="_blank" title="{{t "page.menu.helpTitle"}}" href="http://ecollab.ncr.int.ec.gc.ca/theme/ipgi-impi/cfgddmtc/data%20management%20training%20centre.aspx?pflg={{#isnt language "fr"}}1033{{else}}1036{{/isnt}}&amp;" tabindex="-1" aria-posinset="6" aria-setsize="6" role="menuitem">{{t "page.menu.helpText"}}</a></li>
+                
+            <li><a target="_blank" href="http://ramp-pcar.github.io/index-en.html">{{t "page.menu.rampText"}}</a></li>
+						
 {{else}}
 			<li><a href="#">{{{i18n "tmpl-section"}}}{{{i18n "space"}}}1</a></li>
 			<li><a href="#">{{{i18n "tmpl-section"}}}{{{i18n "space"}}}2</a></li>
