@@ -31,7 +31,7 @@ define(["dojo/_base/lang", "utils/util"],
             transitionDuration = 0.5,
 
             layout = {
-                headerHeight: 195,
+                headerHeight: 238,
                 headerHeightCollapsed: 53,
 
                 footerHeight: 30,
