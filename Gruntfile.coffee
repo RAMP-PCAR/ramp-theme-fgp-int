@@ -720,6 +720,11 @@ module.exports = (grunt) ->
                     cwd: 'src'
                     src: 'js/RAMP/Modules/theme.js'
                     dest: 'build/'
+                ,
+                    expand: true
+                    cwd: 'src'
+                    src: 'js/RAMP/RAMP-starter.js'
+                    dest: 'build/'
                 ]
 
             jsPlugins:
