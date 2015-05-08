@@ -36,7 +36,7 @@ RAMP = {
      * @property configServiceURL
      * @type String
      */
-    configServiceURL: "http://sncr01wbingsdv1.ncr.int.ec.gc.ca:8000/v1/",
+    configServiceURL: "http://160.106.128.113/v1/",
     // FIXME move the config service URL out of this file since it is now minified and appended to lib.js in the build
 
     /**
