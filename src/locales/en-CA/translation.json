@@ -1,28 +1,28 @@
 {
     "page": {
-        "title": "Reusable Accessible Mapping Platform (RAMP) - Intranet Theme",
-        "siteTitle": "Federal Geospatial Platform",
-        "siteSubTitle": "Data Catalogue",
         "menu": {
-            "homeText": "Home",
-            "homeTitle": "The home page of the Data Catalogue",
-            "searchText": "Search",
-            "searchTitle": "Search records in the catalogue",
-            "basicSearchText": "Basic Search",
-            "basicSearchTitle": "The basic search page of the Data Catalogue. From here you can search the catalogue using keywords",
             "advancedSearchText": "Advanced Search",
             "advancedSearchTitle": "The advanced search page of the Data Catalogue. Use the form to create advanced queries in the catalogue",
+            "basicSearchText": "Basic Search",
+            "basicSearchTitle": "The basic search page of the Data Catalogue. From here you can search the catalogue using keywords",
             "browseText": "Browse",
             "browseTitle": "List of all records that can be further refined within the search results page",
-            "registerText": "Register",
-            "registerTitle": "Complete the form on this page to register for an account with the Data Catalogue",
-            "signInText": "Sign In",
-            "signInTitle": "Enter your account information to sign in to the Data Catalogue",
             "helpText": "Help",
             "helpTitle": "Access user guides and resources",
-            "rampText": "RAMP",
+            "homeText": "Home",
+            "homeTitle": "The home page of the Data Catalogue",
+            "rampDocs": "Documentation",
             "rampStarted": "Getting Started",
-            "rampDocs": "Documentation"
-        }
+            "rampText": "RAMP",
+            "registerText": "Register",
+            "registerTitle": "Complete the form on this page to register for an account with the Data Catalogue",
+            "searchText": "Search",
+            "searchTitle": "Search records in the catalogue",
+            "signInText": "Sign In",
+            "signInTitle": "Enter your account information to sign in to the Data Catalogue"
+        },
+        "siteSubTitle": "Data Catalogue",
+        "siteTitle": "Federal Geospatial Platform",
+        "title": "Reusable Accessible Mapping Platform (RAMP) - Intranet Theme"
     }
 }
