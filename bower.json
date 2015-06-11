@@ -25,10 +25,17 @@
     ],
     "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.5.0-2",
 =======
         "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.4.0-ckan",
 >>>>>>> release/Groundhog
+=======
+        "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.4.0-ckan",
+=======
+        "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.4.0-ckan",
+>>>>>>> master
+>>>>>>> 826b0aa7dae2a02af9bdad5a81c665ce1a393d6a
         "theme-gc-intranet": "https://github.com/RAMP-PCAR/ramp-wet-dep/raw/dep/v4.0.5/theme-gc-intranet.zip"
     },
     "moduleType": [
