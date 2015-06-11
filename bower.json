@@ -24,11 +24,7 @@
         "./lib"
     ],
     "dependencies": {
-<<<<<<< HEAD
         "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.5.0-2",
-=======
-        "ramp-pcar": "https://github.com/RAMP-PCAR/RAMP-PCAR.git#v5.4.0-ckan",
->>>>>>> release/Groundhog
         "theme-gc-intranet": "https://github.com/RAMP-PCAR/ramp-wet-dep/raw/dep/v4.0.5/theme-gc-intranet.zip"
     },
     "moduleType": [
