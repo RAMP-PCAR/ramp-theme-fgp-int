@@ -8,7 +8,8 @@
 
 /**
 * RAMPStarter class.
-* Performs initial configuration of the dojo config object specifying path to the RAMP modules, detecting locale, and loading the {{#crossLink "Bootstrapper"}}{{/crossLink}} module.
+* Performs initial configuration of the dojo config object specifying path to the RAMP modules, detecting locale,
+* and loading the {{#crossLink 'Bootstrapper'}}{{/crossLink}} module.
 * pipe the locale to dojo.
 *
 * @class RAMPStarter
@@ -16,16 +17,17 @@
 */
 
 //required to get draw bar to show in French
-var RAMP,
-    jsFolderPath = "js/",
-    pathname = location.pathname.replace(/\/[^/]+$/, "") + "/",
-    jsPrefix = pathname + jsFolderPath,
-    htmlNode = $("html"),
-    dojoConfig;
+var RAMP;
+var jsFolderPath = 'js/';
+var pathname = location.pathname.replace(/\/[^/]+$/, '') + '/';
+var jsPrefix = pathname + jsFolderPath;
+var htmlNode = $('html');
+var dojoConfig;
 
 /**
 * RAMP global class.
-* A general globally available class to hold any RAMP global data. Currently houses any plugins which are not loaded via AMD.
+* A general globally available class to hold any RAMP global data. Currently houses any plugins which are not
+* loaded via AMD.
 *
 * @class RAMP
 */
@@ -36,11 +38,13 @@ RAMP = {
      * @property configServiceURL
      * @type String
      */
-    configServiceURL: "http://160.106.128.113/v1/",
+    configServiceURL: 'http://160.106.128.113/v1/',
+
     // FIXME move the config service URL out of this file since it is now minified and appended to lib.js in the build
 
     /**
-     * The RAMP application config, it should be treated as read only by all modules other than globalStorage and bootstrapper
+     * The RAMP application config, it should be treated as read only by all modules other than globalStorage
+     * and bootstrapper
      *
      * @property config
      * @type Object
@@ -55,7 +59,7 @@ RAMP = {
      */
     plugins: {
         featureInfoParser: {},
-        projectionLookup: {}
+        projectionLookup: {},
     },
 
     /**
@@ -68,8 +72,8 @@ RAMP = {
         ui: {
             sidePanelOpened: true,
             fullscreen: false,
-            wmsQuery: true
-        }
+            wmsQuery: true,
+        },
     },
 
     /**
@@ -86,50 +90,54 @@ RAMP = {
      * @property scripts
      * @type array
      */
-    scripts: ['http://js.arcgis.com/3.13/', jsPrefix + 'lib/wet-boew/js/wet-boew.js', jsPrefix + 'RAMP/bootstrapper.js']
+    scripts: [
+        'http://js.arcgis.com/3.13/', jsPrefix + 'lib/wet-boew/js/wet-boew.js', jsPrefix + 'RAMP/bootstrapper.js',
+    ],
 };
 
 var importScript = (function (oHead) {
         'use strict';
 
-        function loadError (oError) {
-            throw new URIError("The script " + oError.target.src + " is not accessible.");
+        function loadError(oError) {
+            throw new URIError('The script ' + oError.target.src + ' is not accessible.');
         }
 
         return function (sSrc, fOnload) {
-            var oScript = document.createElement("script");
-            oScript.type = "text\/javascript";
+            var oScript = document.createElement('script');
+            oScript.type = 'text\/javascript';
             oScript.onerror = loadError;
             if (fOnload) { oScript.onload = fOnload; }
-                oHead.appendChild(oScript);
-                oScript.src = sSrc;
-            };
 
-    })(document.head || document.getElementsByTagName("head")[0]);
+            oHead.appendChild(oScript);
+            oScript.src = sSrc;
+        };
+
+    })(document.head || document.getElementsByTagName('head')[0]);
 
 dojoConfig = {
     parseOnLoad: false,
-    locale: htmlNode.attr("lang"),
+    locale: htmlNode.attr('lang'),
     async: true,
     packages: [
         {
-            name: "ramp",
-            location: jsPrefix + "RAMP/Modules"
+            name: 'ramp',
+            location: jsPrefix + 'RAMP/Modules',
         },
         {
-            name: "utils",
-            location: jsPrefix + "RAMP/Utils"
+            name: 'utils',
+            location: jsPrefix + 'RAMP/Utils',
         },
         {
-            name: "tools",
-            location: jsPrefix + "RAMP/Tools/"
-        }
+            name: 'tools',
+            location: jsPrefix + 'RAMP/Tools/',
+        },
     ],
-    fullPluginPath: jsPrefix + 'plugins/'
+    fullPluginPath: jsPrefix + 'plugins/',
 };
 
 (function loadRampScripts(scripts) {
     'use strict';
     if (scripts.length === 0) { return; }
+
     importScript(scripts[0], function () { loadRampScripts(scripts.slice(1)); });
 })(RAMP.scripts);
